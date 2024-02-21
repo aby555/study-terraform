@@ -8,3 +8,8 @@ resource "aws_instance" "ec2-instance" {
     Name = "appserver"
   }
 }
+provider "aws" {
+  region = "us-east-1"
+  access_key = "AKIAQ6DNTPZ4V2WB3K35"
+  secret_key = "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"
+}
