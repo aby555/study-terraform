@@ -6,7 +6,7 @@ resource "aws_instance" "ec2-instance" {
 
   ami = "ami-0f3c7d07486cad139"
   instance_type = "t2.micro"
-  count = 1
+  count = 3
     tags = {
     Name = "appserver"
   }
