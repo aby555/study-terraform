@@ -8,8 +8,17 @@ resource "aws_instance" "ec2-instance" {
     Name = "appserver"
   }
 }
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 4.0.0"
+    }
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIAQ6DNTPZ4V2WB3K35"
-  secret_key = "o/pMfrF3vhXWdcx0XimcR1BkXsnttMwQtyRqmn/P"
+  access_key = "your_aws_access_key"
+  secret_key = "your_aws_secret_access_key"
 }
